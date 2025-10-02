@@ -194,7 +194,7 @@ def extract_model_properties_sample(token, df_files, project_name, project_id, m
 # =========================================================
 CLIENT_ID = os.environ.get("CLIENT_ID") # Melhor usar variáveis de ambiente!
 CLIENT_SECRET = os.environ.get("CLIENT_SECRET")
-REDIRECT_URI = "https://quanta-bim.onrender.com/callback" # A URL da sua aplicação!
+REDIRECT_URI = "https://app-bim.onrender.com/callback" # A URL da sua aplicação!
 SCOPES = "data:read account:read"
 #REDIRECT_URI = 'http://127.0.0.1:8080/callback'
 
