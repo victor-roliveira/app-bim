@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard BIM</title>
+    <style> body { font-family: sans-serif; padding: 20px; } </style>
+</head>
+<body>
+    <h1>Seus Hubs da Autodesk</h1>
+    <a href="/logout">Sair</a>
+    <hr>
+    
+    {% if hubs %}
+        <ul>
+        {% for hub in hubs %}
+            <li>{{ hub.attributes.name }} (ID: {{ hub.id }})</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>Nenhum hub encontrado.</p>
+    {% endif %}
+
+    </body>
+</html>
