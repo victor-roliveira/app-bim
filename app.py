@@ -200,7 +200,7 @@ REDIRECT_URI = 'http://127.0.0.1:8080/callback'
 
 app = Flask(__name__)
 # A secret_key é essencial para gerenciar as sessões de login de forma segura
-app.secret_key = os.environ.get("FLASK_SECRET_KEY", "SDKFDFKJkdasdlemnciy@3$#$5452394134NSHDexq1")
+app.secret_key = os.environ.get("FLASK_SECRET_KEY")
 
 
 # =========================================================
